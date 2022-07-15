@@ -1,31 +1,31 @@
-*{
+* {
     margin: 0;
     padding: 0;
     background-color: hsl(185, 75%, 39%);
 }
 
 
-body{
-    background-image: url(../images/bg-pattern-top.png),url(../images/bg-pattern-bottom.png);
+body {
+    background-image: url(../images/bg-pattern-top.png), url(../images/bg-pattern-bottom.png);
     display: flex;
     align-items: center;
+    justify-content: center;
     min-height: 100vh;
     background-repeat: no-repeat, no-repeat;
-    background-position: right 52vw bottom 40vh,left 52vw top 44vh;
+    background-position: right 52vw bottom 40vh, left 52vw top 44vh;
 }
 
 
-.main_box{
+.main_box {
     height: 419px;
     width: 400px;
     border: 1px solid hsl(185, 75%, 39%);
     border-radius: 15px;
     background-color: white;
-    margin: 130px auto;
 }
 
 
-.main_bg{
+.main_bg {
     position: absolute;
     width: 400px;
     border-top-left-radius: 15px;
@@ -33,7 +33,7 @@ body{
 }
 
 
-.mini_box{
+.mini_box {
     position: relative;
     border: 1px solid white;
     background-color: white;
@@ -43,32 +43,32 @@ body{
     margin: 110px auto;
 }
 
-.man{
+.man {
     border-radius: 100%;
     margin: 4.5px 0px 0px 4.5px;
 }
 
 
-.name{
+.name {
     position: relative;
     background-color: white;
     color: hsl(229, 23%, 23%);
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: 700;
     font-size: 18px;
-    margin-left: 33%;
-    margin-top: -22%;
+    text-align: center;
+    margin-top: -24%;
 }
 
 
-.age{
+.age {
     background-color: white;
     color: hsl(227, 10%, 46%);
     font-weight: 400;
 }
 
 
-.city{
+.city {
     position: relative;
     font-size: 16px;
     font-weight: 400;
@@ -80,16 +80,17 @@ body{
 }
 
 
-.line{
+.line {
     position: relative;
     border: 1px solid hsl(0, 3%, 87%);
     width: 398px;
     margin-top: 8%;
     background-color: hsl(0, 3%, 87%);
 }
-.nums1{
+
+.nums1 {
     position: relative;
-    font-size: 18px;
+    font-size: 16px;
     background-color: white;
     color: hsl(229, 23%, 23%);
     font-family: 'Kumbh Sans', sans-serif;
@@ -97,9 +98,10 @@ body{
     margin-top: 7%;
     margin-left: 19%;
 }
-.nums2{
+
+.nums2 {
     position: relative;
-    font-size: 13px;
+    font-size: 12px;
     background-color: white;
     color: hsl(0, 0%, 59%);
     font-family: 'Kumbh Sans', sans-serif;
@@ -110,22 +112,32 @@ body{
 
 
 
-@media (min-width: 300px) and (max-width: 900px){
-    .line{
-        width: 338px;
+@media (min-width: 100px) and (max-width: 900px) {
+    .line {
+        width: 99%;
     }
-    .main_box{
-        width: 340px;
+
+    .main_box {
+        max-width: 340px;
+       width: 83%;
         height: 418px;
         margin: 100px auto;
     }
-    .main_bg{
-        width: 340px;
+
+    .name{
+        margin-top: -30%;
     }
-    .nums1{
+
+    .main_bg {
+        max-width: 340px;
+        width: 83%;
+    }
+
+    .nums1 {
         margin-left: 14%;
     }
-    .nums2{
+
+    .nums2 {
         margin-left: 9.7%;
     }
 }
